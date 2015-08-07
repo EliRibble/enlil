@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.org/EliRibble/enlil.png)](https://travis-ci.org/EliRibble/enlil)
+
 # enlil
 A wiki that uses markdown
 
