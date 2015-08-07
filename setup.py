@@ -92,12 +92,14 @@ def main():
             },
             packages             = [
                 "enlil",
+                "enlil.api",
             ],
             package_data         = {
                 "enlil"          : ["enlil/*"],
+                "enlil.api"      : ["enlil/api/*"],
             },
             data_files           = get_data_files(),
-            scripts              = [],
+            scripts              = ['bin/enlil'],
             include_package_data = True,
         )
 

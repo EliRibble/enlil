@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+import os
+import enlil.logging
+import enlil.server
+
+def main():
+    enlil.logging.setup_log()
+    config = {}
+    app = enlil.server.create_app(config)
+    host = os.getenv('HOST', 'localhost')
+    port = int(os.getenv('PORT', 3000))
+    try:
+        app.run(host, port)
+    except KeyboardInterrupt:
+        LOGGER.info("Shutting down")
+
+if __name__ == '__main__':
+    main()
